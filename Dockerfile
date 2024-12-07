@@ -21,6 +21,5 @@ COPY --from=build /app/target/nano.war /usr/local/tomcat/webapps/ROOT.war
 
 # Step 8: Expose the port that Tomcat listens on
 EXPOSE 8080
-
 # Step 9: Set the command to run Tomcat
 CMD ["catalina.sh", "run"]
